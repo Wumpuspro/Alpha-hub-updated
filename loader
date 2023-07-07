@@ -270,6 +270,7 @@ function keySystem(clr)
                 Title.Text = "Correct Key ✅"
                 wait(1)
                 ScriptLoader:Destroy()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/blob/main/Library", true))()
             else
                 Title.Text = "Invalid Key."
             end
