@@ -1,5 +1,5 @@
 local pandacore = loadstring(game:HttpGet("https://pandatechnology.xyz/service_api/PandaAuthCore.lua", true))()
-local service_name  = "vicious" -- Given by SkieHacker
+local service_name  = "alpha_hub" -- Given by SkieHacker
 
 
 function keySystem(clr)
