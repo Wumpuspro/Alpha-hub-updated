@@ -10,7 +10,7 @@ local Stats = Tab:CreateFrame("Stats")
 local Teleport = Tab:CreateFrame("Teleport")
 local Dungeon = Tab:CreateFrame("Dungeon")
 local Race = Tab:CreateFrame("Race")
-local Others = Tab:CreateFrame("Ithers")
+local Others = Tab:CreateFrame("Others")
 
 Button = Page:CreateButton("Button", "Description", function()
 CreateNotification("Title", "Description", function(value)
