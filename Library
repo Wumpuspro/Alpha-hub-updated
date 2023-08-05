@@ -1,4 +1,9 @@
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/main/lib"))()
+local UserInputService = game:GetService("UserInputService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local TweenService = game:GetService("TweenService")
+local tween = game:service"TweenService"
+
 
 local UI = GUI:CreateWindow("Discord","https://discord.gg/m4EjaHF67T")
 
