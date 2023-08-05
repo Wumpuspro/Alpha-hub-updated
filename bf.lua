@@ -1,4 +1,5 @@
-local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/blob/main/lib"))()
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/main/lib"))()
+
 local UI = GUI:CreateWindow("Discord","https://discord.gg/m4EjaHF67T")
 
 local Main = UI:addPage("Home",1,true,6)
@@ -8,7 +9,8 @@ local Main4 = UI:addPage("Combat",1,true,6)
 local Main5 = UI:addPage("Teleport",1,true,6)
 local Main6 = UI:addPage("Player",1,true,6)
 local Main7 = UI:addPage("Esp",1,true,6)
-local Main8 = UI:addPage("Shop",1,true,6) 
+local Main8 = UI:addPage("Shop",1,true,6)
+
 
 Main:addLabel("This is a Label","Lol this funny")
 
@@ -95,6 +97,7 @@ Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
+
 -- Spam 
 
 Main6:addLabel("Spam","This is just to show how it looks with more ui elements")
@@ -103,13 +106,16 @@ Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
-Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
-end)
 
 Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
+
+
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
+end)
+
 
 Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
