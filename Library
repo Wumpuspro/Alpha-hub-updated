@@ -2,18 +2,26 @@ local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/98KRapid/
 
 local UI = GUI:CreateWindow("Discord","https://discord.gg/VnzfhHPHCm")
 
-local Main = UI:addPage("Home",1,true,6)
+local Main = UI:addPage("Main",1,true,6)
+local Main2 = UI:addPage("Auto Farm",1,true,6)
+local Main3 = UI:addPage("Stats",1,true,6)
+local Main4 = UI:addPage("Combat",1,true,6)
+local Main5 = UI:addPage("Teleport",1,true,6)
+local Main6 = UI:addPage("Player",1,true,6)
+local Main7 = UI:addPage("Esp",1,true,6)
+local Main8 = UI:addPage("Shop",1,true,6)
 
-Home:addLabel("This is a Label","Lol this funny")
 
-Home:addButton("This is a button",function()
+Main:addLabel("This is a Label","Lol this funny")
+
+Main:addButton("This is a button",function()
     game.StarterGui:SetCore("SendNotification",{
         Title = "Clicked";
         Text = "Lo";
     })
 end)
 
-Home:addToggle("This is a Toggle",function(value)
+Main:addToggle("This is a Toggle",function(value)
     print(value)
     if value == false then 
         game.StarterGui:SetCore("SendNotification",{
@@ -28,18 +36,18 @@ Home:addToggle("This is a Toggle",function(value)
     end
 end)
 
-Home:addSlider("This is a Slider",16,100,function(value)
+Main:addSlider("This is a Slider",16,100,function(value)
     print(value)
 end)
 
-Home:addTextBox("This is a TextBox","Um",function(value)
+Main:addTextBox("This is a TextBox","Um",function(value)
     game.StarterGui:SetCore("SendNotification",{
         Title = "Wrote";
         Text = value;
     })
 end)
 
-Home:addDropdown("This is a Dropdown",{"Um","Yep","Lop","GG"},1,function(value)
+Main:addDropdown("This is a Dropdown",{"Um","Yep","Lop","GG"},1,function(value)
     game.StarterGui:SetCore("SendNotification",{
         Title = "Selected :";
         Text = value;
