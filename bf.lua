@@ -8,8 +8,8 @@ local Main3 = UI:addPage("Stats",1,true,6)
 local Main4 = UI:addPage("Combat",1,true,6)
 local Main5 = UI:addPage("Teleport",1,true,6)
 local Main6 = UI:addPage("Player",1,true,6)
-local Main7 = UI:addPage("Esp",1,true,6)
-local Main8 = UI:addPage("Shop",1,true,6)
+local Main7 = UI:addPage("Extra",1,true,6)
+
 
 
 Main:addLabel("This is a Label","Lol this funny")
