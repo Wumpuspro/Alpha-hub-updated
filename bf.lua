@@ -1,6 +1,6 @@
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/main/lib"))()
 
-local UI = GUI:CreateWindow("Discord","https://discord.gg/m4EjaHF67T")
+local UI = GUI:CreateWindow("Alpha Hub","https://discord.gg/m4EjaHF67T")
 
 local Main = UI:addPage("Home",1,true,6)
 local Main2 = UI:addPage("Auto Farm",1,true,6)
