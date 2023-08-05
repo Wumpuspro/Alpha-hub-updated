@@ -2,15 +2,13 @@ local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro
 
 local UI = GUI:CreateWindow("Alpha Hub","https://discord.gg/m4EjaHF67T")
 
-local Main = UI:addPage("Home",1,true,6)
+local Main = UI:addPage("Main",1,true,6)
 local Main2 = UI:addPage("Auto Farm",1,true,6)
 local Main3 = UI:addPage("Stats",1,true,6)
 local Main4 = UI:addPage("Combat",1,true,6)
 local Main5 = UI:addPage("Teleport",1,true,6)
 local Main6 = UI:addPage("Player",1,true,6)
 local Main7 = UI:addPage("Extra",1,true,6)
-
-
 
 Main:addLabel("This is a Label","Lol this funny")
 
