@@ -1,4 +1,4 @@
-local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/blob/main/lib", true))()
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Wumpuspro/Alpha-hub-updated/blob/main/lib"))()
 local UI = GUI:CreateWindow("Discord","https://discord.gg/m4EjaHF67T")
 
 local Main = UI:addPage("Home",1,true,6)
