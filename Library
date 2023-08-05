@@ -14,16 +14,16 @@ local Main7 = UI:addPage("Esp",1,true,6)
 local Main8 = UI:addPage("Shop",1,true,6)
 
 
-Home:addLabel("This is a Label","Lol this funny")
+Main:addLabel("This is a Label","Lol this funny")
 
-Home:addButton("This is a button",function()
+Main:addButton("This is a button",function()
     game.StarterGui:SetCore("SendNotification",{
         Title = "Clicked";
         Text = "Lo";
     })
 end)
 
-Home:addToggle("This is a Toggle",function(value)
+Main:addToggle("This is a Toggle",function(value)
     print(value)
     if value == false then 
         game.StarterGui:SetCore("SendNotification",{
@@ -38,18 +38,18 @@ Home:addToggle("This is a Toggle",function(value)
     end
 end)
 
-Home:addSlider("This is a Slider",16,100,function(value)
+Main:addSlider("This is a Slider",16,100,function(value)
     print(value)
 end)
 
-Home:addTextBox("This is a TextBox","Um",function(value)
+Main:addTextBox("This is a TextBox","Um",function(value)
     game.StarterGui:SetCore("SendNotification",{
         Title = "Wrote";
         Text = value;
     })
 end)
 
-Home:addDropdown("This is a Dropdown",{"Um","Yep","Lop","GG"},1,function(value)
+Main:addDropdown("This is a Dropdown",{"Um","Yep","Lop","GG"},1,function(value)
     game.StarterGui:SetCore("SendNotification",{
         Title = "Selected :";
         Text = value;
@@ -58,16 +58,16 @@ end)
 
 -- Player
 
-Player:addLabel("Player","For player related thing")
+Main6:addLabel("Player","For player related thing")
 
 
-Player:addButton("DIE",function()
+Main6:addButton("DIE",function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
 -- Toggle
 
-Player:addToggle("Sprint",function(value)
+Main6:addToggle("Sprint",function(value)
     if value == false then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     else
@@ -77,13 +77,13 @@ end)
 
 -- Slider
 
-Player:addSlider("WalkSpeed",16,150,function(value)
+Main6:addSlider("WalkSpeed",16,150,function(value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
 -- Textbox
 
-Player:addTextBox("Jump Power / 50 is default","Number here",function(value)
+Main6:addTextBox("Jump Power / 50 is default","Number here",function(value)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
 
@@ -95,30 +95,30 @@ for i,v in pairs(game:GetService("Players"):GetPlayers()) do
     table.insert(PLIST,v.DisplayName)
 end
 
-Player:addDropdown("Teleport to Player",PLIST,4,function(value)
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
 
 -- Spam 
 
-Player:addLabel("Spam","This is just to show how it looks with more ui elements")
+Main6:addLabel("Spam","This is just to show how it looks with more ui elements")
 
-Player:addDropdown("Teleport to Player",PLIST,4,function(value)
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
 
-Player:addDropdown("Teleport to Player",PLIST,4,function(value)
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
 
-Player:addDropdown("Teleport to Player",PLIST,4,function(value)
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
 
-Player:addDropdown("Teleport to Player",PLIST,4,function(value)
+Main6:addDropdown("Teleport to Player",PLIST,4,function(value)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[value].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
